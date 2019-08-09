@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Aug 08 22:09:07 BRT 2019
+org.eclipse.jst.jee.server\:agenda-maven=C\:\\web-development\\apache-tomcat-8\\wtpwebapps\\agenda-maven
+org.eclipse.jst.jee.server\:agenda=C\:\\web-development\\apache-tomcat-8\\wtpwebapps\\agenda
