@@ -1,8 +1,20 @@
-CREATE TABLE pessoas (
-	id	BIGINT NOT	NULL AUTO_INCREMENT,
-	nome			VARCHAR(255),
-	email			VARCHAR(255),
-	endereco		VARCHAR(255),
-	telefone		VARCHAR(255),
-	PRIMARY KEY 	(id)
+USE agenda;
+
+CREATE TABLE pessoa (
+	id	BIGINT(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	nome VARCHAR(255),
+    dtanascimeno VARCHAR(12),
+    sexo CHAR(1)
+);
+
+CREATE TABLE endereco (
+	id	BIGINT(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	logradouro	VARCHAR(255),
+    cep VARCHAR(10)
+);
+
+CREATE TABLE contato (
+	id	BIGINT(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	email VARCHAR(255),
+	telefone VARCHAR(255)
 );
