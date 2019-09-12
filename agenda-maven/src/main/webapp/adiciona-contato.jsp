@@ -36,31 +36,40 @@
 					<input type="hidden" id="id" name="id" value="${param.id}">
 				
 					<div class="form-row">
-						<div class="form-group col-md-12">
-							<label for="nome">Nome</label> 
+						<div class="form-group col-md-6"> 
 							<input type="text" value="${param.nome}" class="form-control" id="name" name="nome" placeholder="Nome" >
 						</div>
-					</div>
-
-					<div class="form-row">
-						<div class="form-group col-md-3">
-							<label for="tel">Telefone</label> 
-							<input type="text" value="${param.telefone}" class="form-control" id="tel" name="telefone" placeholder="Telefone" data-mask="(99)9999-9999">
+						<div class="form-group col-md-4">
+							<input type="text" value="${param.nome}" class="form-control" id="name" name="nome" placeholder="DD/MM/AAAA" >
 						</div>
-
-						<div class="form-group col-md-3">
-							<label for="email">E-mail</label> 
+						<div class="form-group col-md-2"> 
+							<input type="text" value="${param.sexo}" class="form-control" id="sexo" name="sexo" placeholder="Sexo" >
+						</div>
+					</div>
+					
+					<div class="form-row">
+						<div class="form-group col-md-8">
 							<input type="email" value="${param.email}" class="form-control" id="email" name="email" placeholder="E-mail">
 						</div>
-
-						<div class="form-group col-md-6">
-							<label for="end">Endereço</label> 
+						<div class="form-group col-md-4">
+							<input type="text" value="${param.telefone}" class="form-control" id="tel" name="telefone" placeholder="Telefone" data-mask="(99)9999-9999">
+						</div>
+					</div>
+					
+					<div class="form-row">
+						<div class="form-group col-md-6"> 
 							<input type="text" value="${param.endereco}" class="form-control" id="end" name="endereco" placeholder="Endereço">
 						</div>
-
+						<div class="form-group col-md-6"> 
+							<input type="text" value="${param.cep}" class="form-control" id="cep" name="cep" placeholder="CEP">
+						</div>
+					</div>
+					
+					<div class="form-row">
 						<div class="form-group col-md-6">
 							<button class="btn btn-success" id="btnSalvar" type="submit">Salvar</button>
 						</div>
+					</div>
 					</div>
 				</form>
 			</div>

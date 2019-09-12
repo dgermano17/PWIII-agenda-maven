@@ -27,10 +27,8 @@ public class CadastraUsuarioServlet extends HttpServlet {
 			pessoa.setId(Long.parseLong(request.getParameter("id")));
 		}
 		pessoa.setNome(request.getParameter("nome"));
-		pessoa.setEmail(request.getParameter("email"));
-		pessoa.setEndereco(request.getParameter("endereco"));
-		pessoa.setTelefone(request.getParameter("telefone"));
-		
+		pessoa.setDtanascimento(request.getParameter("dtanascimento"));
+		pessoa.setSexo(request.getParameter("sexo"));
 		this.service = new CadastraUsuarioService();
 		
 		PrintWriter out = response.getWriter();
