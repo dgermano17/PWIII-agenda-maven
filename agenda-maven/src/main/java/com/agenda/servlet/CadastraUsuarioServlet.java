@@ -40,11 +40,12 @@ public class CadastraUsuarioServlet extends HttpServlet {
 			response.sendRedirect("busca-contatos");
 			
 		} catch (Exception e) {
-			out.println("<html>");
-			out.println("<body>");
-			out.println("Falha ao realizar o cadastro!");
-			out.println("</body>");
-			out.println("</html>");
+			throw new RuntimeException(e);
+//			out.println("<html>");
+//			out.println("<body>");
+//			out.println("Falha ao realizar o cadastro!");
+//			out.println("</body>");
+//			out.println("</html>");
 		}
 		
 	}

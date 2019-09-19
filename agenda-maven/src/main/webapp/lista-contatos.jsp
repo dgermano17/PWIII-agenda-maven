@@ -31,7 +31,7 @@
 		<c:if test="${empty contatos}">
 			<div class="text-center">
 				<hr>
-				<h2>Nenhum contato cadastrado!</h2>
+				<h2>Nenhum contato cadastrado</h2>
 			</div>
 		</c:if>
 		
@@ -39,22 +39,20 @@
 			<table class="table">
 					<tr>
 						<th>Nome</th>
-						<th>E-mail</th>
-						<th>Endereco</th>
-						<th>Telefone</th>
+						<th>Dta. Nascimento</th>
+						<th>Sexo</th>
 						<th></th>
 					</tr>
 					
 					<c:forEach var="pessoa" items="${contatos}">
 						<tr>
 							<td>${pessoa.nome}</td>
-							<td>${pessoa.email}</td>
-							<td>${pessoa.endereco}</td>
-							<td>${pessoa.telefone}</td>
+							<td>${pessoa.dtanascimento}</td>
+							<td>${pessoa.sexo}</td>
 							<td>
 								<a href="#" onclick="saveContactId(${pessoa.id})" data-toggle="modal" data-target="#modalExemplo">Remover</a>
 								<span> | </span>
-								<a href="adiciona-contato.jsp?id=${pessoa.id}&nome=${pessoa.nome}&email=${pessoa.email}&endereco=${pessoa.endereco}&telefone=${pessoa.telefone}">Editar</a>
+								<a href="adiciona-contato.jsp?id=${pessoa.id}&nome=${pessoa.nome}&email=${pessoa.dtanascimento}&endereco=${pessoa.sexo}">Editar</a>
 							</td>
 						</tr>
 					</c:forEach>

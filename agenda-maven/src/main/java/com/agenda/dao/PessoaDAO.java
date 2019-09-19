@@ -16,7 +16,7 @@ public class PessoaDAO {
 
 	public void cadastrar(Pessoa pessoa) {
 
-		String SQL = "insert into pessoa (nome, sexo, dtanascimento) values (?,?,?)";
+		String SQL = "insert into pessoa (nome, dtanascimento, sexo) values (?,?,?)";
 
 		try {
 
@@ -38,7 +38,7 @@ public class PessoaDAO {
 
 	public List<Pessoa> buscarPessoas() {
 
-		String SQL = "select * from pessoas";
+		String SQL = "select * from pessoa";
 
 		try {
 
@@ -53,6 +53,7 @@ public class PessoaDAO {
 				Pessoa pessoa = new Pessoa();
 				pessoa.setId(rs.getLong("id"));
 				pessoa.setNome(rs.getString("nome"));
+				pessoa.setSexo(rs.getString("sexo"));
 				pessoa.setDtanascimento(rs.getString("dtanascimento"));
 				
 				pessoas.add(pessoa);
@@ -70,7 +71,7 @@ public class PessoaDAO {
 
 	public void remover(Pessoa pessoa) {
 
-		String SQL = "delete from pessoas where id=?";
+		String SQL = "delete from pessoa where id=?";
 
 		try {
 			this.connection = new ConnectionFactory().getConnection();
@@ -85,7 +86,7 @@ public class PessoaDAO {
 	
 	public void alterar(Pessoa pessoa) {
 		
-	    String SQL = "update pessoas set nome=?, email=?, endereco=?, telefone=? where id=?";
+	    String SQL = "update pessoa set nome=?, dtanascimento=?, sexo=? where id=?";
 	    
 	    try {
 	    	

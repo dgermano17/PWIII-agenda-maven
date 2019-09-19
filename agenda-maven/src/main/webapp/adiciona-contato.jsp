@@ -40,7 +40,7 @@
 							<input type="text" value="${param.nome}" class="form-control" id="name" name="nome" placeholder="Nome" >
 						</div>
 						<div class="form-group col-md-4">
-							<input type="text" value="${param.nome}" class="form-control" id="name" name="nome" placeholder="DD/MM/AAAA" >
+							<input type="text" value="${param.dtanascimento}" class="form-control" id="dtanascimento" name="dtanascimento" placeholder="DD/MM/AAAA" >
 						</div>
 						<div class="form-group col-md-2"> 
 							<input type="text" value="${param.sexo}" class="form-control" id="sexo" name="sexo" placeholder="Sexo" >
@@ -70,12 +70,11 @@
 							<button class="btn btn-success" id="btnSalvar" type="submit">Salvar</button>
 						</div>
 					</div>
-					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-
+	
 	<script src="js/jquery.js" type="text/javascript"></script>
 	<script src="js/bootstrap.js" type="text/javascript"></script>
 	<script src="js/inputMask.js"></script>
