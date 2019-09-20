@@ -34,6 +34,8 @@
 				<form action="cadastra-usuario" id="form-produto">
 				
 					<input type="hidden" id="id" name="id" value="${param.id}">
+					<input type="hidden" id="id_cont" name="id_cont" value="${param.idEnd}">
+					<input type="hidden" id="id_end" name="id_end" value="${param.idCont}">
 				
 					<div class="form-row">
 						<div class="form-group col-md-6"> 

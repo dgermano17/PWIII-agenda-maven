@@ -2,15 +2,17 @@ package com.agenda.model;
 
 public class Endereco {
 	
-	private long id;
+	private long idEnd;
 	private String endereco,cep;
 
-	public long getId() {
-		return id;
+	public long getIdEnd() {
+		return idEnd;
 	}
-	public void setId(long id) {
-		this.id = id;
+	public void setIdEnd(long idEnd) {
+		this.idEnd = idEnd;
 	}
+
+	
 	public String getEndereco() {
 		return endereco;
 	}

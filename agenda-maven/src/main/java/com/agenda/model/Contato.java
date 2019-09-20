@@ -2,15 +2,17 @@ package com.agenda.model;
 
 public class Contato {
 	
-	private long id;
+	private long idCont;
 	private String telefone,email;
 
-	public long getId() {
-		return id;
+	public long getIdCont() {
+		return idCont;
 	}
-	public void setId(long id) {
-		this.id = id;
+	public void setIdCont(long idCont) {
+		this.idCont = idCont;
 	}
+
+	
 	public String getTelefone() {
 		return telefone;
 	}
