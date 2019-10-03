@@ -3,7 +3,7 @@ USE agenda;
 CREATE TABLE pessoa (
 	id	BIGINT(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	nome VARCHAR(255),
-    dtanascimeno VARCHAR(12),
+    dtanascimento VARCHAR(12),
     sexo CHAR(1)
 );
 

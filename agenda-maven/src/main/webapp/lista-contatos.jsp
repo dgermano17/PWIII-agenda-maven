@@ -52,7 +52,7 @@
 							<td>
 								<a href="#" onclick="saveContactId(${pessoa.id})" data-toggle="modal" data-target="#modalExemplo">Remover</a>
 								<span> | </span>
-								<a href="adiciona-contato.jsp?id=${pessoa.id}&nome=${pessoa.nome}&email=${pessoa.dtanascimento}&endereco=${pessoa.sexo}">Editar</a>
+								<a href="adiciona-contato.jsp?id=${pessoa.id}&nome=${pessoa.nome}&dtanascimento=${pessoa.dtanascimento}&sexo=${pessoa.sexo}">Editar</a>
 							</td>
 						</tr>
 					</c:forEach>
