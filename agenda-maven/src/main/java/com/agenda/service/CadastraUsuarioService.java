@@ -7,27 +7,27 @@ import com.agenda.model.Pessoa;
 
 public class CadastraUsuarioService {
 
-	private PessoaDAO dao;
+	private PessoaDAO pdao;
 
 	public CadastraUsuarioService() {
-		this.dao = new PessoaDAO();
+		this.pdao = new PessoaDAO();
 	}
 
 	public void salvarOuAtualizar(Pessoa pessoa) {
 
 		if (pessoa.getId() == 0) {
-			this.dao.cadastrar(pessoa);
+			this.pdao.cadastrar(pessoa);
 		} else {
-			this.dao.alterar(pessoa);
+			this.pdao.alterar(pessoa);
 		}
 	}
 
 	public List<Pessoa> buscaPessoas() {
-		return this.dao.buscarPessoas();
+		return this.pdao.buscarPessoas();
 	}
 
 	public void remover(Pessoa pessoa) {
-		this.dao.remover(pessoa);
+		this.pdao.remover(pessoa);
 	}
 
 }

@@ -89,6 +89,8 @@ public class EnderecoDAO {
 		    stmt.setString(1, endr.getLogradouro());
 		    stmt.setString(2, endr.getCep());
 		    stmt.setLong(3, endr.getIdEnd());
+		    stmt.execute();
+		    stmt.close();
 		
 		}catch (SQLException e) {
 			throw new RuntimeException(e);
