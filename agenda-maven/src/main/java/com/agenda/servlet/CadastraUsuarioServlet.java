@@ -31,13 +31,12 @@ public class CadastraUsuarioServlet extends HttpServlet {
 		pessoa.setSexo(request.getParameter("sexo"));
 		this.service = new CadastraUsuarioService();
 		
-		PrintWriter out = response.getWriter();
+		
+//		PrintWriter out = response.getWriter();
 
 		try {
 			
 			this.service.salvarOuAtualizar(pessoa);
-			
-			response.sendRedirect("busca-contatos");
 			
 		} catch (Exception e) {
 			throw new RuntimeException(e);

@@ -12,13 +12,21 @@ public class CadastraEndService {
 		this.edao = new EnderecoDAO();
 	}
 	
-	public void salvarOuAtualizar(Endereco endereco) {
+	public void salvarOuAtualizarEnd(Endereco endereco) {
 
 		if (endereco.getIdEnd() == 0) {
 			this.edao.cadastrar(endereco);
 		} else {
 			this.edao.aterarEnd(endereco);
 		}
+	}
+	
+	public List<Endereco> buscarEnds(){
+		return this.edao.buscarEnd();
+	}
+	
+	public void removerEnd(Endereco enderenco) {
+		this.edao.removerEnd(enderenco);
 	}
 
 }
